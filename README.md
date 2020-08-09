@@ -1,3 +1,0 @@
-# ThankViewCodingChallenge
-# vuePracticeRefresher
-# vuePracticeRefresher
