@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root" @mousemove="onMouseMove">
-        <div :style="styleOne"></div>
-        <div :style="styleTwo"></div>
+    <div id="app">
+        <h3>My Identicon Generator</h3>
+        <div>Input: <input v-on:input="onInput"/></div>
+        <div>Output: <input/></div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
 

@@ -1,12 +1,10 @@
 new Vue({
-    el: "#root",
-    data: {
-        styleOne: {}, styleTwo: {},
-    },
+    // el is short for the word element
+    el: "#app",
     methods: {
-        onMouseMove(event) {
-            this.styleOne = transform(-event.clientX / event.clientY);
-            this.styleTwo = transform(-event.clientX / event.clientY);
-        }
+        onInput: function(event) {
+            console.log(event.target.value);
+        },
+
     }
 })
