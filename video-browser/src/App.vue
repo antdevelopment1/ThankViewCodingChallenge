@@ -1,9 +1,10 @@
 <template>
     <div class="container">
         <SearchBar @termChange="onTermChange"></SearchBar>
-        <VideoList :videos="videos" @videoSelect="selectedVideo"></VideoList>
-        <VideoListDetail :videos="videos"></VideoListDetail>
-        {{videos.length}}
+        <div class="row">
+            <VideoList :videos="videos" @videoSelect="selectedVideo"></VideoList>
+            <VideoListDetail :videos="videos"></VideoListDetail>
+        </div>
     </div>
 </template>
 
@@ -46,5 +47,7 @@ export default {
             })
         }
     }
+
+    
 };
 </script>
